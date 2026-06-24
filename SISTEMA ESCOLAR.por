@@ -1,7 +1,7 @@
 programa{
     funcao inicio(){
         real nota1, nota2, nota3, nota4, media=0
-        inteiro opc, i 
+        inteiro opc, i, freq
         cadeia nome
 
         escreva("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n")//Cabeçalho
@@ -24,6 +24,8 @@ programa{
         escreva("Digite a nota de 4°: ")
         leia(nota4)
 
+        escreva("Digite a Frequência do Aluno: %")
+        leia(freq)
         media = (nota1 + nota2 + nota3 + nota4)/ 4
 
         faca{
@@ -41,17 +43,19 @@ programa{
 
             escolha (opc){
               caso 1: 
-
+                escreva ("Média do Aluno: ", media) //Mostra a Média
+                pare
               caso 2:
-
+                escreva ("Frequência do Aluno: ", freq, "%") //Mostra a Frequência
+                pare
               caso 3:
-
+                pare
               caso 4:
-
+                pare
               caso 5:
-
+                pare
               caso 6:
-
+                pare
               caso 7:
                 i = 1
                 pare
