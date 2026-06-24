@@ -2,7 +2,7 @@ programa{
     funcao inicio(){
         real nota1, nota2, nota3, nota4, media=0, maiorNota=0, menorNota=100
         inteiro opc, i, freq
-        cadeia nome
+        cadeia nome, sit
 
         escreva("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n")//Cabeçalho
         escreva("              SISTEMA ESCOLAR              \n")
@@ -49,7 +49,15 @@ programa{
             menorNota = nota4
             }
 
-
+		  se(freq < 75){
+		  	sit = "Reprovado por Falta"
+		  } senao se (media >= 7){
+		  	sit = "Aprovado"
+		  } senao se (media >= 5){
+		  	sit = "Recuperação"
+		  } senao {
+		  	sit = "Reprovado por Nota"
+		  }
         
 
         faca{
@@ -61,7 +69,8 @@ programa{
             escreva("[3] Mostrar o Boletim do Aluno","\n")
             escreva("[4] Mostrar Maior Nota","\n")
             escreva("[5] Mostrar Menor Nota","\n")
-            escreva("[6] Fechar Programa","\n")
+            escreva("[6] Ver Situção","\n")
+            escreva("[7] Fechar Programa","\n")
             escreva("Escolha: ")
             leia(opc)
 
@@ -75,7 +84,7 @@ programa{
               caso 3:
                 escreva("--- Boletim ---\n") //Mostra o Boletim com as Notas, Média e Frequência
                 escreva("Nome:", nome)
-                escreva("1° Nota: ", nota1)
+                escreva("\n1° Nota: ", nota1)
                 escreva("\n2° Nota: ", nota2)
                 escreva("\n3° Nota: ", nota3)
                 escreva("\n4° Nota: ", nota4)
@@ -83,6 +92,7 @@ programa{
                 escreva("\nMédia: ", media)
                 escreva("\nMenor Nota: ", menorNota)
                 escreva("\nMaior Nota: ", maiorNota)
+                escreva("\nSituação: ", sit)
                 escreva("\n-----------------------------------")
                 pare
               caso 4:
@@ -93,6 +103,9 @@ programa{
                 escreva("Menor Nota: ", menorNota)
                 pare
               caso 6:
+                 escreva("\nSituação: ", sit)
+                pare
+              caso 7:
                 i = 1
                 pare
         
