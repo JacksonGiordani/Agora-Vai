@@ -1,6 +1,6 @@
 programa{
     funcao inicio(){
-        real nota1, nota2, nota3, nota4, media=0
+        real nota1, nota2, nota3, nota4, media=0, maiorNota=0, menorNota=100
         inteiro opc, i, freq
         cadeia nome
 
@@ -26,7 +26,21 @@ programa{
 
         escreva("Digite a Frequência do Aluno: %")
         leia(freq)
-        media = (nota1 + nota2 + nota3 + nota4)/ 4
+        media = (nota1 + nota2 + nota3 + nota4)/ 4 //Calcula a Média
+
+        //Verifica qual Nota é Maior
+            se (nota2 > maiorNota){ 
+            maiorNota = nota2
+            }
+            se (nota3 > maiorNota){
+            maiorNota = nota3
+            }
+            se (nota4 > maiorNota){
+            maiorNota = nota4
+            }
+
+
+        
 
         faca{
             escreva("\n========================")
@@ -58,8 +72,11 @@ programa{
                 escreva("Média: ", media)
                 pare
               caso 4:
+                escreva("Maior Nota: ", maiorNota)
                 pare
+
               caso 5:
+                escreva("Menor Nota: ", menorNota)
                 pare
               caso 6:
                 i = 1
@@ -71,3 +88,14 @@ programa{
         } enquanto (i != 1)
     }
     }
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 1137; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
