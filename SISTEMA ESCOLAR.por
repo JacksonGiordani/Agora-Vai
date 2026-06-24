@@ -74,12 +74,16 @@ programa{
                 pare
               caso 3:
                 escreva("--- Boletim ---\n") //Mostra o Boletim com as Notas, Média e Frequência
+                escreva("Nome:", nome)
                 escreva("1° Nota: ", nota1)
-                escreva("2° Nota: ", nota2)
-                escreva("3° Nota: ", nota3)
-                escreva("4° Nota: ", nota4)
-                escreva("Frequência: ", freq, "%")
-                escreva("Média: ", media)
+                escreva("\n2° Nota: ", nota2)
+                escreva("\n3° Nota: ", nota3)
+                escreva("\n4° Nota: ", nota4)
+                escreva("\nFrequência: ", freq, "%")
+                escreva("\nMédia: ", media)
+                escreva("\nMenor Nota: ", menorNota)
+                escreva("\nMaior Nota: ", maiorNota)
+                escreva("\n-----------------------------------")
                 pare
               caso 4:
                 escreva("Maior Nota: ", maiorNota)
@@ -98,14 +102,3 @@ programa{
         } enquanto (i != 1)
     }
     }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 1414; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
