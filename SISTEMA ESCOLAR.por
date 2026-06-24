@@ -38,6 +38,16 @@ programa{
             se (nota4 > maiorNota){
             maiorNota = nota4
             }
+        //Verifica qual Nota é Menor
+            se (nota2 < menorNota){
+            menorNota = nota2
+            }
+            se (nota3 < menorNota){
+            menorNota = nota3
+            }
+            se (nota4 < menorNota){
+            menorNota = nota4
+            }
 
 
         
@@ -93,7 +103,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1137; 
+ * @POSICAO-CURSOR = 1414; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
